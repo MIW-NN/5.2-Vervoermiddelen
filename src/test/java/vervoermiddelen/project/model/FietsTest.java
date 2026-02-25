@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
-public class BikeTest {
+public class FietsTest {
 
     public static final String BRAND = "gazelle";
     public static final String TYPE = "Chamonix";
@@ -12,11 +12,11 @@ public class BikeTest {
 
     @Test
     public void expectBikeToContainValuesGivenAsString(){
-        var bike = new Bike(BRAND, TYPE, WEIGHT);
-        var bikeString = bike.toString();
+        var fiets = new Fiets(BRAND, TYPE, WEIGHT);
+        var fietsString = fiets.toString();
 
-        Assert.assertTrue(bikeString.contains(BRAND));
-        Assert.assertTrue(bikeString.contains(TYPE));
-//        Assert.assertTrue(bikeString.contains("menskracht"));
+        Assert.assertTrue(fietsString.contains(BRAND));
+        Assert.assertTrue(fietsString.contains(TYPE));
+//        Assert.assertTrue(fietsString.contains("menskracht"));
     }
 }
