@@ -6,7 +6,7 @@ public class Zeilboot extends Vaartuig {
     }
 
     @Override
-    public String geefAandrijfKracht() {
+    public String geefAandrijfkracht() {
         return ("windkracht");
     }
 }

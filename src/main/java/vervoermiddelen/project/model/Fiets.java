@@ -8,7 +8,7 @@ public class Fiets extends Voertuig {
     }
 
     @Override
-    public String geefAandrijfKracht() {
+    public String geefAandrijfkracht() {
         return ("menskracht");
     }
 }

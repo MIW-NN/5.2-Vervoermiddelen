@@ -10,7 +10,10 @@ public class Koets extends Voertuig {
     }
 
     @Override
-    public String geefAandrijfKracht() {
-        return (this.aantalPaarden + " paarden");
+    public String geefAandrijfkracht() {
+        if (aantalPaarden == 1) {
+            return "1 paard";
+        }
+        return aantalPaarden + " paarden";
     }
 }

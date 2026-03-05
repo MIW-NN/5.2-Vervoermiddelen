@@ -10,7 +10,10 @@ public class Auto extends Voertuig {
     }
 
     @Override
-    public String geefAandrijfKracht() {
-        return (this.soortBrandstof + "motor");
+    public String geefAandrijfkracht() {
+        if (soortBrandstof.equals("elektrisch")) {
+            return "elektrische motor";
+        }
+        return soortBrandstof + "motor";
     }
 }

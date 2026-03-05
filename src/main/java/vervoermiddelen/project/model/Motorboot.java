@@ -9,7 +9,7 @@ public class Motorboot extends Vaartuig {
     }
 
     @Override
-    public String geefAandrijfKracht() {
+    public String geefAandrijfkracht() {
         return (this.soortBrandstof + "motor");
     }
 }

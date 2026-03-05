@@ -18,7 +18,7 @@ public abstract class Vervoermiddel {
      * een concrete geefAandrijfkracht method moet hebben.
      * @return benzinemotor, 2 paarden, windkracht, menskracht, enz.
      */
-    public abstract String geefAandrijfKracht();
+    public abstract String geefAandrijfkracht();
 
     /**
      * Deze toString gebruikt de abstract method geefAandrijfkracht,
@@ -27,6 +27,6 @@ public abstract class Vervoermiddel {
     @Override
     public String toString() {
         return String.format("Vervoermiddel #%d %s %s aangedreven door %s",
-                id, merk, type, geefAandrijfKracht());
+                id, merk, type, geefAandrijfkracht());
     }
 }
